@@ -1,0 +1,17 @@
+/* بسم الله الرحمن الرحيم */
+
+.logo {
+    cursor: pointer;
+    color: #de8c22;
+}
+.btn-style {
+    border: none; color: #de8c22;
+    background: #ffffff; border-radius: 3px ;
+}
+.btn-style:hover {
+    background: #DE8C22FF; color : #fff;
+}
+
+
+
+/* الحمد لله رب العالمين */

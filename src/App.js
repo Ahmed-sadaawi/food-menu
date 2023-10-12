@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+/* بسم الله الرحمن الرحيم */
+
+// REACT BOOTSTRAP COMPONENTS:
+import { Container } from 'react-bootstrap';
+
+// REACT COMPONENTS:
+import NavBar from "./components/NavBar/NavBar";
+import Category from "./components/Category/Category";
+import Cards from "./components/Cards/Cards";
+
+// STYLING
+import "./App.css";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <NavBar />
+
+        <Container>
+            <Category />
+            <Cards />
+        </Container>
+
     </div>
   );
 }
 
 export default App;
+
+/* الحمد لله رب العالمين */

@@ -1,0 +1,20 @@
+/* بسم الله الرحمن الرحيم */
+
+.underline {
+    width: 200px; height: 3px;
+    background: #de8c22;
+
+}
+.heading {
+    font-family: 'Almarai', sans-serif;
+}
+
+.category {
+    border-radius: 5px; border: 1px solid #de8c22;
+    background: 0;
+}
+
+.category:hover {
+    background: #de8c22;
+    color: white;
+}
