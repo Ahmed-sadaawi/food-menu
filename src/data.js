@@ -41,7 +41,7 @@ const items = [
         price: 30,
         category: "عشاء"
 
-    }
+        }
 ];
 
 export default items;

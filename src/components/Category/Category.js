@@ -2,8 +2,8 @@
 
 import {Col, Row} from "react-bootstrap";
 import "./Category.css";
-import items from "../../data";
-function Category({filtering}) {
+
+function Category({filtering, uniqueValue}) {
 
     return (
         <div className="wrapper mb-5">
@@ -17,10 +17,18 @@ function Category({filtering}) {
 
             <Row className="justify-content-center">
                 <Col sm="12" className="mx-2">
-                    <button onClick={(e) => filtering(e.target.name)} className="mx-2 p-1 px-3 category" name="الكل">الكل</button>
-                    {items.map(item => (
-                        <button onClick={(e) => filtering(e.target.name)} className="mx-2 p-1 px-3 category" name={item.category}>{item.category}</button>
-                    ))}
+                    {(uniqueValue.length >= 1)? (
+                        uniqueValue.map(item => {
+                            return(
+                                    <button  key={Math.random()}
+                                        onClick={(e) => filtering(e.target.name)}
+                                        className="mx-2 p-1 px-3 category"
+                                        name={item}
+
+                                    >{item}</button>
+
+                            )})
+                    ): <h3>لا يوجد أصناف...!</h3>}
                 </Col>
             </Row>
         </div>

@@ -9,7 +9,6 @@ import "./Cards.css";
 function Cards({data}) {
     return(
         <>
-
         {data.map(item => (
             <Row key={item.id}>
                 <Col sm="12" >
@@ -26,8 +25,7 @@ function Cards({data}) {
                     </Card>
                 </Col>
             </Row>
-        ))
-        }
+        ))}
         </>
     )
 }
